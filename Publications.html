@@ -8,187 +8,228 @@
     <link rel="stylesheet" href="./Styles/utility.css">
     <link rel="stylesheet" href="./Styles/navbar-footress.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
+    <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body> 
-      <!-- navebar started -->
+<div> 
+    <!-- navebar started -->
 
-       <nav class="navebar d-flex justify-around item-center">
+    <nav class="navebar d-flex justify-between item-center m-x">
 
-       <div class="logo" data-aos="fade-down"
-       data-aos-easing="linear"
-       data-aos-duration="1500">
-        <img class="logo-size" src="./Assets/Home Pics/Logo of web site.webp" alt="Logo-image">
-    </div>
-
-       <div class="nav-items d-flex gap-5 item-center" data-aos="fade-down"
-       data-aos-easing="linear"
-       data-aos-duration="1500">
-       <a class="text-none" href="./index.html">Home</a>
-       <a class="text-none" href="./About US.html">About Us</a>
-       <a class="text-none" href="./Publications.html">Publications</a>
-       <a class="text-none" href="./Feedback.html">Feedback</a>
-       <button class="franchise-btn"><a class="text-none" href="Get a Franchise.html">Get a Franchise</a></button>
-       <button class="Order-btn"><a class="text-none" href="Order Online.html">Order Online <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a></button>
-      </div>
-       </nav>
-       <!-- navebar ended -->
-        <hr>
-
-        <div class="d-flex justify-around p-t-30px m-left">
-
-            <div class="set-first-book m-left" data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-            <img src="./Assets/Publication pics/Salt'n Papper Village Book No.1.webp" alt="Book-1" width="450px" height="500px"></div>
-            
-            <div class="set-second-book margin-right" data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
-            data-aos-duration="500">
-            <img src="./Assets/Publication pics/Salt'n Papper Village Book No.2.webp" alt="Book-1" width="450px" height="500px"></div>
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <img class="logo-size" src="./Assets/Home Pics/Logo of web site.webp" alt="Logo-image">
         </div>
 
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-            <h1 class="d-flex justify-center p-t-50px f-size" data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0">Available at following branches</h1>
+        <div id="nav-items" class="nav-items d-flex gap-5 item-center" data-aos="fade-down"     data-aos-easing="linear" data-aos-duration="1500">
 
-        <p class="d-flex justify-center p-t-30px f-small" data-aos="fade-up"
+            <a class="text-none" href="./index.html">Home</a>
+            <a class="text-none" href="./About US.html">About Us</a>
+            <a class="text-none" href="./Publications.html">Publications</a>
+            <a class="text-none" href="./Feedback.html">Feedback</a>
+
+            <button class="franchise-btn">
+                <a class="text-none" href="Get a Franchise.html">Get a Franchise</a>
+            </button>
+
+            <button class="Order-btn">
+                <a class="text-none" href="Order Online.html">Order Online 
+                    <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </button>
+        
+        </div>
+
+    </nav>
+
+    <!-- navebar ended -->
+    
+    <hr>
+
+    <div class="d-flex justify-around p-t-30px flex-wrap">
+
+        <div class="set-first-book m-y" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <img src="./Assets/Publication pics/Salt'n Papper Village Book No.1.webp" alt="Book-1" class="top-img">
+        </div>
+            
+        <div class="set-second-book m-y" data-aos="fade-left" data-aos-anchor="#example-anchor"
+            data-aos-offset="500" data-aos-duration="500">
+            
+            <img src="./Assets/Publication pics/Salt'n Papper Village Book No.2.webp" alt="Book-1" class="top-img"></div>
+
+        </div>
+
+    </div>
+
+
+    <h1 class="text-align p-t-50px f-size" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">Available at following branches</h1>
+
+
+    <p class="text-align text-white p-t-30px f-small" data-aos="fade-up"
         data-aos-duration="3000">Salt’n Pepper Restaurant – Mall Road</p>
 
-        <p class="d-flex justify-center bg-gray p-t-10px f-small" data-aos="zoom-in-down">26, Mall Road, Lahore, Pakistan</p>
+    <p class="text-align bg-gray p-t-10px f-small" data-aos="zoom-in-down">26, Mall Road, Lahore, Pakistan</p>
         
-        <p class="d-flex justify-center bg-gray p-t-10px f-small" data-aos="zoom-in-down">04237244009</p>
+    <p class="text-align bg-gray p-t-10px f-small" data-aos="zoom-in-down">04237244009</p>
 
-        
-        <p class="d-flex justify-center p-t-30px f-small" data-aos="fade-up"
+    <p class="text-align text-white p-t-30px f-small" data-aos="fade-up"
         data-aos-duration="3000">Salt’n Pepper Restaurant – Liberty Market</p>
 
-        <p class="d-flex justify-center bg-gray p-t-10px f-small" data-aos="zoom-in-down">48 – Commercial Zone, Liberty Market, Lahore, Pakistan</p>
+    <p class="text-align bg-gray p-t-10px f-small" data-aos="zoom-in-down">48 – Commercial Zone, Liberty Market, Lahore, Pakistan</p>
         
-        <p class="d-flex justify-center bg-gray p-t-10px f-small" data-aos="zoom-in-down">04235752893</p>
+    <p class="text-align bg-gray p-t-10px f-small" data-aos="zoom-in-down">04235752893</p>
 
-        
-        <p class="d-flex justify-center p-t-30px f-small" data-aos="fade-up"
+    <p class="text-align text-white p-t-30px f-small" data-aos="fade-up"
         data-aos-duration="3000">Salt’n Pepper Village – Lahore</p>
 
-        <p class="d-flex justify-center bg-gray p-t-10px f-small" data-aos="zoom-in-down">103-B II, MM Alam Road, Lahore, Pakistan</p>
+    <p class="text-align bg-gray p-t-10px f-small" data-aos="zoom-in-down">103-B II, MM Alam Road, Lahore, Pakistan</p>
         
-        <p class="d-flex justify-center bg-gray p-t-10px f-small" data-aos="zoom-in-down">04235750735</p>
-
+    <p class="text-align bg-gray p-t-10px f-small" data-aos="zoom-in-down">04235750735</p>
         
-        <p class="d-flex justify-center p-t-30px f-small" data-aos="fade-up"
+    <p class="text-align text-white p-t-30px f-small" data-aos="fade-up"
         data-aos-duration="3000">Salt’ n Pepper – Islamabad</p>
 
-        <p class="d-flex justify-center bg-gray p-t-10px f-small" data-aos="zoom-in-down">Plot# 55, Shabbir Plaza, Blue Area, F-6, Islamabad</p>
+    <p class="text-align bg-gray p-t-10px f-small" data-aos="zoom-in-down">Plot# 55, Shabbir Plaza, Blue Area, F-6, Islamabad</p>
         
-        <p class="d-flex justify-center bg-gray p-t-10px f-small" data-aos="zoom-in-down">0512604904-6</p>
+    <p class="text-align bg-gray p-t-10px f-small" data-aos="zoom-in-down">0512604904-6</p>
 
-        
-        <p class="d-flex justify-center p-t-30px f-small" data-aos="fade-up"
+    <p class="text-align text-white p-t-30px f-small" data-aos="fade-up"
         data-aos-duration="3000">Salt’n Pepper – Faisalabad</p>
 
-        <p class="d-flex justify-center bg-gray p-t-10px f-small" data-aos="zoom-in-down">14-Kohinoor City, Faisalabad</p>
+    <p class="text-align bg-gray p-t-10px f-small" data-aos="zoom-in-down">14-Kohinoor City, Faisalabad</p>
         
-        <p class="d-flex justify-center bg-gray p-t-10px f-small p-b-50" data-aos="zoom-in-down">0418711404</p>
+    <p class="text-align bg-gray p-t-10px f-small p-b-30" data-aos="zoom-in-down">0418711404</p>
 
+    
     <!-- Footer Started -->
-<footer>
 
-    <div class="flex-2 d-flex padding-bottom">
+    <footer data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000" class="m-x p-t">
 
-        <div class="padding-top">
-         <img src="./Assets/Home Pics/Logo of web site.webp" alt="logo-img" width="160px">
+        <div class="flex-2 d-flex justify-center padding-bottom">
+
+            <div class="padding-top">
+                <img src="./Assets/Home Pics/Logo of web site.webp" alt="logo-img" width="160px">
      
-         <p class="color-grey f-medium">The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service, extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dinning destinations in Lahore. From family occasions to business dinner and moments of the heart, this place is where unforgettable memories are made.
-         </p>
-         <p><a href="#" class="text-none color-grey">Terms & conditions</a>
-         <a href="#" class="text-none color-grey"> Privacy policy</a></p>       
-        </div>
+                <p class="color-grey pad-top">The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service, extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dinning destinations in Lahore. From family occasions to business dinner and moments of the heart, this place is where unforgettable memories are made.
+                </p>
 
-        <div class="m-l">
-            <h5>site Link</h5>
-            <br />
-            <br />
-            <p><a class="text-none" href="#">Home</a></p>  
-            <br />
-            <p><a class="text-none" href="#">About Us</a></p>
-            <br />
-            <p><a class="text-none" href="#">Publications</a></p>
-            <br />
-            <p><a class="text-none" href="#">Get a Franchise</a></p>
-            <br />
-            <p><a class="text-none" href="#">Feedback</a></p>
-
-        </div>
-
-        <div class="m-l color-grey">
-
-            <h5>Contact Us</h5>
-            <br />
-            <h3 class="f-small-size color-white">Head office Address</h3>
-            <br />
-            <h3>23-Usman Block, New <br /> GardenTown, Lahore, Pakistan</h3>
-            <br />
-            <h3 class="f-small-size color-white">Head office number</h3>
-            <br />
-            <h3>+92 42 358 509 31</h3>
-            <br />
-            <h3>+92 42 358 509 30</h3>
-            <br />
-            <h3 class="f-small-size color-white">Email Address</h3>
-            <br />
-            <h3>snpfood@brain.net.pk</h3>
-            <br />
-            <h3 class="f-small-size color-white">Free delivery number</h3>
-            <br />
-            <h3>+92 42 111 100 678</h3>
-            <br />
-            <h3>+92 03 111 444 610</h3>
-
-        </div>
-        <div class="m-left">
-            
-            <h5>Follow Us</h5>
-
-            <button class="Facebook-btn"><a href="#"><i class="fa-brands fa-facebook-f text-none"></i></a></button>
-
-            <button class="Instagram-btn"><a href="#"><i class="fa-brands fa-instagram text-none"></i></a></button>
-
-            <button class="Twitter-btn"><a href="#"><i class="fa-brands fa-twitter text-none"></i></a></button>
-
-            <div>
-                <img class="App-Store-btn" src="./Assets/Home Pics/App Store icon.webp" alt="App Store img">
+                <p><a href="#" class="text-none color-grey">Terms & conditions</a>
+                <a href="#" class="text-none color-grey"> Privacy policy</a></p>       
             </div>
 
-            <div>
-                <img class="App-Store-btn" src="./Assets/Home Pics/Play Store icon.webp" alt="App Store img">
+            <div class="m-l ml-0">
+        
+                <h5>site Link</h5>
+        
+                <br />
+                <br />
+                <p><a class="text-none color-grey" href="#">Home</a></p>  
+                <br />
+                <p><a class="text-none color-grey" href="#">About Us</a></p>
+                <br />
+                <p><a class="text-none color-grey" href="#">Publications</a></p>
+                <br />
+                <p><a class="text-none color-grey" href="#">Feedback</a></p>
+                <br />
+                <p><a class="text-none color-grey" href="#">Get a Franchise</a></p>
+
             </div>
+
+            <div class="m-l color-grey">
+
+                <h5>Contact Us</h5>
+        
+                <br />
+                <h3 class="f-small-size color-white">Head office Address</h3>
+                <br />
+                <h3>23-Usman Block, New <br /> GardenTown, Lahore, Pakistan</h3>
+                <br />
+                <h3 class="f-small-size color-white">Head office number</h3>
+                <br />
+                <h3>+92 42 358 509 31</h3>
+                <br />
+                <h3>+92 42 358 509 30</h3>
+                <br />
+                <h3 class="f-small-size color-white">Email Address</h3>
+                <br />
+                <h3>snpfood@brain.net.pk</h3>
+                <br />
+                <h3 class="f-small-size color-white">Free delivery number</h3>
+                <br />
+                <h3>+92 42 111 100 678</h3>
+                <br />
+                <h3>+92 03 111 444 610</h3>
+
+            </div>
+
+            <div class="m-left ml-0">
             
+                <h5>Follow Us</h5>
+
+                <button class="Facebook-btn"><a href="#"><i class="fa-brands fa-facebook-f text-none"></i></a></button>
+
+                <button class="Instagram-btn"><a href="#"><i class="fa-brands fa-instagram text-none"></i></a></button>
+
+                <button class="Twitter-btn"><a href="#"><i class="fa-brands fa-twitter text-none"></i></a></button>
+
+                <div>
+                    <img class="App-Store-btn" src="./Assets/Home Pics/App Store icon.webp" alt="App Store img">
+                </div>
+
+                <div>
+                    <img class="App-Store-btn" src="./Assets/Home Pics/Play Store icon.webp" alt="App Store img">
+                </div>
+            
+            </div>
+
+        </div>
+     
+        <hr>
+    
+        <div class="flex-2 d-flex justify-around setRes">
+            <p class="color-white">© 2023 Salt'n Pepper Restaurant.</p>
+            <p class="color-white">Usman Bin Nasir.com</p>
         </div>
 
-    </div>
-     
-</footer>
-<!-- Footer Ended -->        
+    </footer>
 
-<hr>
-<div class="flex-2 d-flex justify-around f-small">
-    <p class="color-white p-b pad-top">© 2023 Salt'n Pepper Restaurant.</p>
-    <p class="color-white p-b pad-top">Usman Bin Nasir.com</p>
-</div>
+    <!-- Footer Ended -->
 
 
-       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
 
-       <script>
+        function toggleMenu() {
+            document.getElementById("nav-items").classList.toggle("show");
+        }
+
+        function toggleMenu() {
+
+            let menu = document.getElementById("nav-items");
+            let navbar = document.querySelector(".navebar");
+
+            menu.classList.toggle("show");
+
+            if (menu.classList.contains("show")) {
+                navbar.style.paddingBottom = "335px";  // menu ke size ke barabar
+            } else {
+                navbar.style.paddingTop = "20px";   // original padding
+                navbar.style.paddingBottom = "20px";   // original padding
+            }
+        }
+
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
         AOS.init();
-      </script>
+    </script>
 
-       <script src="https://kit.fontawesome.com/e92da4b7c3.js" crossorigin="anonymous"></script>
-    </body>
-    </html>
+    <script src="https://kit.fontawesome.com/e92da4b7c3.js" crossorigin="anonymous"></script>
+</body>
+</html>

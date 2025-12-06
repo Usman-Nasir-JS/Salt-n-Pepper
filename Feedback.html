@@ -8,352 +8,371 @@
     <link rel="stylesheet" href="./Styles/utility.css">
     <link rel="stylesheet" href="./Styles/navbar-footress.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
+    <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body> 
-      <!-- navebar started -->
+    <!-- navebar started -->
 
-       <nav class="navebar d-flex justify-around item-center">
+    <nav class="navebar d-flex justify-between item-center m-x">
 
-       <div class="logo" data-aos="fade-down"
-       data-aos-easing="linear"
-       data-aos-duration="1500">
-        <img class="logo-size" src="./Assets/Home Pics/Logo of web site.webp" alt="Logo-image">
-    </div>
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <img class="logo-size" src="./Assets/Home Pics/Logo of web site.webp" alt="Logo-image">
+        </div>
 
-       <div class="nav-items d-flex gap-5 item-center" data-aos="fade-down"
-       data-aos-easing="linear"
-       data-aos-duration="1500">
-       <a class="text-none" href="./index.html">Home</a>
-       <a class="text-none" href="./About US.html">About Us</a>
-       <a class="text-none" href="./Publications.html">Publications</a>
-       <a class="text-none" href="./Feedback.html">Feedback</a>
-       <button class="franchise-btn"><a class="text-none" href="Get a Franchise.html">Get a Franchise</a></button>
-       <button class="Order-btn"><a class="text-none" href="Order Online.html">Order Online <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a></button>
-      </div>
-       </nav>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-<!-- navebar ended -->
-<!-- image started -->
+        <div id="nav-items" class="nav-items d-flex gap-5 item-center" data-aos="fade-down"     data-aos-easing="linear" data-aos-duration="1500">
+
+            <a class="text-none" href="./index.html">Home</a>
+            <a class="text-none" href="./About US.html">About Us</a>
+            <a class="text-none" href="./Publications.html">Publications</a>
+            <a class="text-none" href="./Feedback.html">Feedback</a>
+
+            <button class="franchise-btn">
+                <a class="text-none" href="Get a Franchise.html">Get a Franchise</a>
+            </button>
+
+            <button class="Order-btn">
+                <a class="text-none" href="Order Online.html">Order Online 
+                    <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </button>
+        
+        </div>
+
+    </nav>
+
+    <!-- navebar ended -->
 
     <!-- image started -->
 
-    <div id="back-image" class="d-flex justify-center item-center center">
+    <div id="back-image" class="d-flex justify-center text-align item-center center">
 
         <div>
             <h4 class="animate__animated animate__bounce animate__rotateInDownLeft font-none f-normal">Salt'n Papper</h4>
             <h2 class="animate__animated animate__bounce animate__flip animate__flip f-large">Feedback</h2>
-            <p class="animate__animated animate__bounce animate__rotateInUpRight f-small">We’d love to hear from you!</p>
+            <p class="animate__animated animate__bounce animate__rotateInUpRight f-small text-white">We’d love to hear from you!</p>
         </div>
 
     </div>
         
-<!-- image ended -->
 
-    <div class="f-very-small margin-top m-left-70 border-right m-b-20">
-        <p>Your feedback is important to us and we greatly appreciate you filling <br /> out the comment form below. We look forward to hearing from you!</p>
-    </div>
-
-<nav class="border-right flex-column">
-
-    <div class="d-flex">
-
-        <div class="m-left-50 p-b-15">
+    <!-- image ended -->    
+        
+    <div class="d-flex justify-around flex-wrap">
             
-            <h1 class="padding-10">Food</h1>
+        <div class="m-x">
+                
+            <p class="f-very-small text-white p-t">Your feedback is important to us and we greatly appreciate you filling <br /> out the comment form below. We look forward to hearing from you!</p>
+            
+            <div class="d-flex flex-start gap-4 flex-wrap">
+
+                <div>
+                        
+                    <h1 class="padding-10">Food</h1>
   
-                <p>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>        
-                </p>
+                    <p class="text-white">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>        
+                    </p>
       
             
-            <h1 class="padding-10">Service</h1>
+                    <h1 class="padding-10">Service</h1>
 
-                <p>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>        
-                </p>
-              
-            <h1 class="padding-10">Cleanliness</h1>
-  
-                <p>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>        
-                </p>
-            
-        
-            <h1 class="padding-10">Value for Money</h1>
-
-                <p>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>        
-                </p>
- 
-                <div class="p-top-5">
-
-                    <div class="d-flex">
-                        <form>
-                            <input type="text" placeholder="Full Name" class="small-box">
-                        </form>
-    
-                        <form>
-                            <input type="text" placeholder="Phone number" class="small-box m-left-15">
-                        </form>
-                        </p>        
-                    </div>
-
-                    <form class="p-top-5">
-                        <input type="datetime-local" placeholder="" class="medium-box">
-                    </form>             
-                    
-                    <form class="p-top-5">
-                        <input type="text" placeholder="Select Branch" class="big-box">
-                    </form>         
-
-                    <form class="p-top-5">
-                        <input type="email" placeholder="Email" class="big-box">
-                    </form>         
-
-                    <form class="p-top-5">
-                        <input type="text" placeholder="Suggestions (if any)" class="big-box height-box">
-                    </form>         
-
-                    <p class="f-mid-small">Kindly incdicate your favourite items from our menu.</p>
-                    
-                    <div class="d-flex gap-1">
-                        <p> 1.
-                            <br />
-                        <form class="p-top-5">
-                            <input type="text" class="emty-box">
-                        </form>
-                        </p>
-                        <p> 2.
-                            <br />
-                        <form class="p-top-5">
-                            <input type="text" class="emty-box">
-                        </form>
-                        </p>
-                        <p> 3.
-                            <br />
-                        <form class="p-top-5">
-                            <input type="text" class="emty-box">
-                        </form>
-                        </p>
-                    </div>
-
-                    <p class="f-mid-small">Are you satisfied with our current menu?</p>
-                  
-                    <div class="d-flex gap-20"> 
-                        <p class="f-mid-small">Yes</p>
-                        <p class="f-mid-small">No</p>
-                    </div>
-
-                    <br />
-
-                    <p class="f-mid-small">If not, what new food items would you like us to add?</p>
-
-                    <div class="d-flex gap-1">
-                        <p> 1.
-                            <br />    
-                        <form class="p-top-5">
-                            <input type="text" class="emty-box">
-                        </form>
-                        </p>
-                        <p> 2.
-                            <br />
-                        <form class="p-top-5">
-                            <input type="text" class="emty-box">
-                        </form>
-                        </p>
-                        <p> 3.
-                            <br />
-                        <form class="p-top-5">
-                            <input type="text" class="emty-box">
-                        </form>
-                        </p>
-                    </div>
-
-                    <p class="f-mid-small">Have you visited our Social Media pages & website?</p>
+                    <p class="text-white">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>        
+                    </p>
 
                 </div>
-                
-        </div>
-            
-            <div class="d-flex flex-column p-b-100 m-left-half text-end">
-        
-                <h1 class="text-align f-small">Foodconsults (PVT.) LTD.</h1>
-                <br />
-                <p class="f-very-small">Foodconsults (Pvt.) Ltd. was founded in 1983 by Mahmood Akbar,<br /> considered by many as the pioneer restaurateur in Pakistan. The <br /> organization, which has its headquarter in Lahore, prides itself on <br /> developing and growing a unique chain of restaurants known as the <br /> Salt’n Pepper Restaurants. Salt’n Pepper restaurants are Pakistan’s <br /> most recognized and distinguished hospitality brand with a history <br /> of market innovation and excellence in restaurant chain operations.</p>
-            
-                <br />
-                <br />
-                <br />
 
-                <h2 class="text-align f-small">Contact Us</h2>
-                <br />
-                <i><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d435490.9956815837!2d74.33791!3d31.489168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904fee737254d%3A0x8370603d14476306!2sFoodconsults%20(Pvt)%20Ltd!5e0!3m2!1sen!2sus!4v1722797630290!5m2!1sen!2sus" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></i>
-            
-                <br />
-                <br />
-                <br />
-            
-                <h2 class="text-align f-small">Head Office</h2>
-            
-                <br/>
-                <br/>
-                <br/>
-                
-                <p class="f-very-small text-align"><i class="fa-solid fa-phone-flip"></i> +92-42-35850931</p>
-                <br />
-                <p class="f-very-small text-align"><i class="fa-solid fa-calculator"></i> +92-42-35850930</p>
-                <br />
-                <p class="f-very-small text-align"><i class="fa-solid fa-truck-moving"></i> +92 42 111-100-678</p>
-                <br />
-                <p class="f-very-small text-align"><i class="fa-regular fa-envelope"></i> snpfood@brain.net.pk</p>
-                <br />
-                <p class="f-very-small text-align"><i class="fa-solid fa-location-dot"></i> 23 Usman Block, New Garden Town, Lahore, Pakistan</p>
-                         
-            </div>     
-    </div> 
+                <div>
 
-</nav>
-
-   <!-- <form class="p-b-15"> 
-    <input type="datetime-local" placeholder="datetime-local" class="">
-</form>
-
-<form class="p-b-15">
-    <input type="search" placeholder="Select Branch" class="">
- </form>
-
- <form class="p-b-15">
-    <input type="email" placeholder="Email" class="">
-  </form>
-
- <form class="p-b-15">
-    <input type="text" placeholder="Suggestions (if any)" class="">
-  </form> 
+                    <h1 class="padding-10">Cleanliness</h1>
   
-            
-        </div>
+                    <p class="text-white">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>        
+                    </p>
+        
+                    <h1 class="padding-10">Value for Money</h1>
+
+                    <p class="text-white">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>        
+                    </p>
+                        
+                </div>
+                
+            </div>
+    
  
-        <div class="m-left-15">
-       -->
+            <div class="p-top-5">
 
+                <div class="d-flex flex-start gap-3">
+                     
+                    <form>
+                        <input type="text" placeholder="Full Name" class="small-box">
+                    </form>
+    
+                    <form>
+                        <input type="text" placeholder="Phone number" class="small-box">
+                    </form>
+                               
+                </div>
 
+                <form class="p-top-5">
+                    <input type="datetime-local" placeholder="" class="medium-box">
+                </form>             
+                    
+                <form class="p-top-5">
+                    <input type="text" placeholder="Select Branch" class="big-box">
+                </form>         
 
-        <!-- Footer Started -->
-<footer>
+                <form class="p-top-5">
+                    <input type="email" placeholder="Email" class="big-box">
+                </form>         
 
-    <div class="flex-2 d-flex padding-bottom">
+                <form class="p-top-5">
+                    <input type="text" placeholder="Suggestions (if any)" class="big-box height-box">
+                </form>         
 
-        <div class="padding-top">
-         <img src="./Assets/Home Pics/Logo of web site.webp" alt="logo-img" width="160px">
-     
-         <p class="color-grey f-medium">The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service, extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dinning destinations in Lahore. From family occasions to business dinner and moments of the heart, this place is where unforgettable memories are made.
-         </p>
-         <p><a href="#" class="text-none color-grey">Terms & conditions</a>
-         <a href="#" class="text-none color-grey"> Privacy policy</a></p>       
-        </div>
+                <p class="text-white f-mid-small">Kindly incdicate your favourite items from our menu.</p>
+                    
+                <div class="setMiniInputs">
+                        
+                    <form class="p-top-5">
+                        <label class="f-very-small m-x">1.</label><input type="text"class="emty-box">
+                    </form>
+                        
+                    <form class="p-top-5">
+                        <label class="f-very-small m-x">2.</label><input type="text" class="emty-box">
+                    </form>
+                        
+                    <form class="p-top-5">
+                        <label class="f-very-small m-x">3.</label><input type="text" class="emty-box">
+                    </form>
+                    
+                </div>
 
-        <div class="m-l">
-            <h5>site Link</h5>
-            <br />
-            <br />
-            <p><a class="text-none" href="#">Home</a></p>  
-            <br />
-            <p><a class="text-none" href="#">About Us</a></p>
-            <br />
-            <p><a class="text-none" href="#">Publications</a></p>
-            <br />
-            <p><a class="text-none" href="#">Get a Franchise</a></p>
-            <br />
-            <p><a class="text-none" href="#">Feedback</a></p>
+                <p class="f-mid-small text-white">Are you satisfied with our current menu?</p>
+                  
+                <div class="d-flex gap-10 text-align">
+                    <p class="f-mid-small text-white">Yes</p>
+                    <p class="f-mid-small text-white">No</p>
+                </div>
 
-        </div>
+                <br />
 
-        <div class="m-l color-grey">
+                <p class="f-mid-small text-white">If not, what new food items would you like us to add?</p>
 
-            <h5>Contact Us</h5>
-            <br />
-            <h3 class="f-small-size color-white">Head office Address</h3>
-            <br />
-            <h3>23-Usman Block, New <br /> GardenTown, Lahore, Pakistan</h3>
-            <br />
-            <h3 class="f-small-size color-white">Head office number</h3>
-            <br />
-            <h3>+92 42 358 509 31</h3>
-            <br />
-            <h3>+92 42 358 509 30</h3>
-            <br />
-            <h3 class="f-small-size color-white">Email Address</h3>
-            <br />
-            <h3>snpfood@brain.net.pk</h3>
-            <br />
-            <h3 class="f-small-size color-white">Free delivery number</h3>
-            <br />
-            <h3>+92 42 111 100 678</h3>
-            <br />
-            <h3>+92 03 111 444 610</h3>
+                <div class="setMiniInputs">
 
-        </div>
-        <div class="m-left">
-            
-            <h5>Follow Us</h5>
+                    <form class="p-top-5">
+                        <label class="f-very-small m-x">1.</label><input type="text" class="emty-box">
+                    </form>
+                        
+                    <form class="p-top-5">
+                        <label class="f-very-small m-x">2.</label><input type="text" class="emty-box">
+                    </form>
+                        
+                    <form class="p-top-5">
+                        <label class="f-very-small m-x">3.</label><input type="text" class="emty-box">
+                    </form>
 
-            <button class="Facebook-btn"><a href="#"><i class="fa-brands fa-facebook-f text-none"></i></a></button>
+                </div>
 
-            <button class="Instagram-btn"><a href="#"><i class="fa-brands fa-instagram text-none"></i></a></button>
+                <p class="text-white f-mid-small">Have you visited our Social Media pages & website?</p>
 
-            <button class="Twitter-btn"><a href="#"><i class="fa-brands fa-twitter text-none"></i></a></button>
-
-            <div>
-                <img class="App-Store-btn" src="./Assets/Home Pics/App Store icon.webp" alt="App Store img">
             </div>
-
-            <div>
-                <img class="App-Store-btn" src="./Assets/Home Pics/Play Store icon.webp" alt="App Store img">
-            </div>
-            
+                
         </div>
+            
+        <div class="text-align p-b-100">
+        
+            <h1 class="text-align f-3 padding-top">Foodconsults (PVT.) LTD.</h1>
+            <br />
+                
+            <p class="f-very-small text-white">Foodconsults (Pvt.) Ltd. was founded in 1983 by Mahmood Akbar,<br />considered by many as the pioneer restaurateur in Pakistan. The <br /> organization, which has its headquarter in Lahore, prides itself on <br /> developing and growing a unique chain of restaurants known as the <br /> Salt’n Pepper Restaurants. Salt’n Pepper restaurants are Pakistan’s <br /> most recognized and distinguished hospitality brand with a history <br /> of market innovation and excellence in restaurant chain operations.</p>
+            
+            <br />
+            <br />
+            <br />
 
+            <h2 class="text-align f-3 p-t p-b-30">Contact Us</h2>
+            <br />
+                
+            <i class="setSize"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d435490.9956815837!2d74.33791!3d31.489168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904fee737254d%3A0x8370603d14476306!2sFoodconsults%20(Pvt)%20Ltd!5e0!3m2!1sen!2sus!4v1722797630290!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></i>
+            
+            <br />
+            <br />
+            <br />
+            
+            <h2 class="text-align f-3 padding-top p-b">Head Office</h2>
+            
+            <br/>
+            <br/>
+            <br/>
+                
+            <p class="f-very-small text-align text-white"><i class="fa-solid fa-phone-flip"></i> +92-42-35850931</p>
+            <br />
+                
+            <p class="f-very-small text-align text-white"><i class="fa-solid fa-calculator"></i> +92-42-35850930</p>
+            <br />
+                
+            <p class="f-very-small text-align text-white"><i class="fa-solid fa-truck-moving"></i> +92 42 111-100-678</p>
+            <br />
+
+            <p class="f-very-small text-align text-white"><i class="fa-regular fa-envelope"></i> snpfood@brain.net.pk</p>
+            <br />
+                
+            <p class="f-very-small text-align text-white"><i class="fa-solid fa-location-dot"></i> 23 Usman Block, New Garden Town, Lahore, Pakistan</p>
+                         
+        </div>     
+    
     </div>
+
+
+    <!-- Footer Started -->
+
+    <footer data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000" class="m-x">
+
+        <div class="flex-2 d-flex justify-center padding-bottom">
+
+            <div class="padding-top">
+                <img src="./Assets/Home Pics/Logo of web site.webp" alt="logo-img" width="160px">
      
-</footer>
-<!-- Footer Ended -->        
+                <p class="color-grey pad-top">The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service, extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dinning destinations in Lahore. From family occasions to business dinner and moments of the heart, this place is where unforgettable memories are made.
+                </p>
 
-<hr>
-<div class="flex-2 d-flex justify-around f-very-small">
-    <p class="color-white p-b pad-top">© 2023 Salt'n Pepper Restaurant.</p>
-    <p class="color-white p-b pad-top">Usman Bin Nasir.com</p>
-</div>
+                <p class="text-white"><a href="#" class="text-none color-grey">Terms & conditions</a>
+                <a href="#" class="text-none color-grey"> Privacy policy</a></p>       
+            </div>
+
+            <div class="m-l ml-0">
+        
+                <h5>site Link</h5>
+        
+                <br />
+                <br />
+                <p class="text-white"><a class="text-none color-grey" href="#">Home</a></p>  
+                <br />
+                <p class="text-white"><a class="text-none color-grey" href="#">About Us</a></p>
+                <br />
+                <p class="text-white"><a class="text-none color-grey" href="#">Publications</a></p>
+                <br />
+                <p class="text-white"><a class="text-none color-grey" href="#">Feedback</a></p>
+                <br />
+                <p class="text-white"><a class="text-none color-grey" href="#">Get a Franchise</a></p>
+
+            </div>
+
+            <div class="m-l color-grey">
+
+                <h5>Contact Us</h5>
+        
+                <br />
+                <h3 class="f-small-size color-white">Head office Address</h3>
+                <br />
+                <h3>23-Usman Block, New <br /> GardenTown, Lahore, Pakistan</h3>
+                <br />
+                <h3 class="f-small-size color-white">Head office number</h3>
+                <br />
+                <h3>+92 42 358 509 31</h3>
+                <br />
+                <h3>+92 42 358 509 30</h3>
+                <br />
+                <h3 class="f-small-size color-white">Email Address</h3>
+                <br />
+                <h3>snpfood@brain.net.pk</h3>
+                <br />
+                <h3 class="f-small-size color-white">Free delivery number</h3>
+                <br />
+                <h3>+92 42 111 100 678</h3>
+                <br />
+                <h3>+92 03 111 444 610</h3>
+
+            </div>
+
+            <div>
+            
+                <h5>Follow Us</h5>
+
+                <button class="Facebook-btn"><a href="#"><i class="fa-brands fa-facebook-f text-none"></i></a></button>
+
+                <button class="Instagram-btn"><a href="#"><i class="fa-brands fa-instagram text-none"></i></a></button>
+
+                <button class="Twitter-btn"><a href="#"><i class="fa-brands fa-twitter text-none"></i></a></button>
+
+                <div>
+                    <img class="App-Store-btn" src="./Assets/Home Pics/App Store icon.webp" alt="App Store img">
+                </div>
+
+                <div>
+                    <img class="App-Store-btn" src="./Assets/Home Pics/Play Store icon.webp" alt="App Store img">
+                </div>
+            
+            </div>
+
+        </div>
+     
+        <hr>
+    
+        <div class="flex-2 d-flex justify-around setRes">
+            <p class="color-white">© 2023 Salt'n Pepper Restaurant.</p>
+            <p class="color-white">Usman Bin Nasir.com</p>
+        </div>
+
+    </footer>
+
+    <!-- Footer Ended -->
 
 
+    <script>
 
-       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        function toggleMenu() {
+            document.getElementById("nav-items").classList.toggle("show");
+        }
 
-       <script>
+        function toggleMenu() {
+
+            let menu = document.getElementById("nav-items");
+            let navbar = document.querySelector(".navebar");
+
+            menu.classList.toggle("show");
+
+            if (menu.classList.contains("show")) {
+                navbar.style.paddingBottom = "335px";  // menu ke size ke barabar
+            } else {
+                navbar.style.paddingTop = "20px";   // original padding
+                navbar.style.paddingBottom = "20px";   // original padding
+            }
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
         AOS.init();
-      </script>
+    </script>
 
-       <script src="https://kit.fontawesome.com/e92da4b7c3.js" crossorigin="anonymous"></script>
-
-
-      
-        </body>
-    </html>
+    <script src="https://kit.fontawesome.com/e92da4b7c3.js" crossorigin="anonymous"></script>   
+</body>
+</html>

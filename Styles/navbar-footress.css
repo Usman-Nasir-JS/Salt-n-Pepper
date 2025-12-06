@@ -3,6 +3,7 @@
     src: url(../Fonts/Futurak\ Style.ultra.ttf);
 }
 
+
 /* <!-- navebar started --> */
 
 .logo-size{
@@ -20,6 +21,7 @@
 
 .navebar{
     padding: 15px;
+    position: relative; /* Important */
 }
 
 .franchise-btn{
@@ -41,9 +43,62 @@
     color: var(--red);
     border-radius: 30px;
     padding: 5px 8px;
-} 
+}
+
+
+@media (max-width: 930px) {
+
+    .logo-size{
+        width: 135px;
+    }
+
+    .nav-items {
+        position: absolute;
+        top: 85px;
+        right: 0;
+
+        width: 100%;
+        flex-direction: column;
+
+        background-color: var(--black);
+        text-align: center;
+        gap: 20px;
+
+        padding: 30px 0;
+
+        display: none;
+
+        z-index: 0; /* image ke upar rahe */
+    }
+
+    .nav-items.show {
+        display: flex;
+    }
+
+
+    .hamburger {
+        display: block;
+        font-size: 2.6rem;
+        color: var(--white);
+        cursor: pointer;
+        z-index: 100;
+    }
+    
+}
+
+
+/* ⭐ Desktop par hamburger hide */
+
+@media (min-width: 930px) {
+
+    .hamburger {
+        display: none;
+    }
+
+}
 
 /* <!-- navebar ended --> */
+
 
 /* footer started */
 
@@ -54,6 +109,12 @@
 .padding-top{
     padding-top: 80px;
 }
+
+p{
+    color: var(--black);
+    font-size: 2rem;
+}
+
 .color-grey{
     color: rgb(156, 156, 156);
     width: 350px;
@@ -91,7 +152,6 @@ h5{
     font-size: 2rem;
 }
 
-
 .Facebook-btn{
     background-color: var(--red);
     color: var(--white);
@@ -128,6 +188,115 @@ h5{
 
 .Play-Store-btn{
     padding-top: 0px;
+}
+
+.setRes{
+    padding: 20px 0px;
+}
+
+
+/* 📌 Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+
+    .flex-2 {
+        flex-wrap: wrap;
+    }
+
+    .m-l,   
+    .m-left {
+        margin-left: 40px;
+        margin-top: 2px;
+    }
+
+    .padding-top {
+        padding-top: 40px;
+    }
+
+    .color-grey {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+}
+
+/* 📌 Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+
+    footer {
+        text-align: center;
+    }
+
+    .flex-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        padding-bottom: 40px;
+    }
+
+    .ml-0 {
+        margin-left: 0;
+    }
+
+    p {
+        width: 90%;
+        margin: auto;
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    .App-Store-btn {
+        width: 180px;
+        padding-top: 20px;
+    }
+
+    .setRes {
+        text-align: center;
+        padding-top: 18px;
+    }
+}
+
+/* 📌 Small mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .Facebook-btn,
+    .Instagram-btn,
+    .Twitter-btn {
+        font-size: 1.4rem;
+        padding: 10px 14px;
+    }
+
+    .App-Store-btn {
+        width: 160px;
+    }
 }
 
 /* footer ended */
